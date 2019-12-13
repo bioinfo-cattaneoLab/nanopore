@@ -54,7 +54,7 @@ $ sudo cp etc/bash_completion.d/singularity /etc/bash_completion.d/
 If everything went according to plan, you now have a working installation of Singularity. Simply typing singularity will give you a summary of all the commands you can use. Typing singularity help <command> will give you more detailed information about running an individual command.
 
 ### Build a recipe from DockerHub 
-With Singularity you can write your own recipe but in this basic tutorial we use a function that 'pull' from [DockerHub](https://hub.docker.com/) a recipe of our program ([STRique](https://hub.docker.com/r/giesselmann/strique)on DockerHub and is [GitRepository](https://github.com/giesselmann/STRique)) that we would obtain.
+With Singularity you can write your own recipe but in this basic tutorial we use a function that 'pull' from [DockerHub](https://hub.docker.com/) a recipe of our program STRique ([DockerHub](https://hub.docker.com/r/giesselmann/strique), [GitRepository](https://github.com/giesselmann/STRique)) that we would obtain.
 ```
 $ singularity pull docker://giesselmann/strique:latest
 ```
