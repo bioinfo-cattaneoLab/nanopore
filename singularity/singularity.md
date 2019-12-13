@@ -1,4 +1,4 @@
-# Singularity tutorial
+# Basic Singularity tutorial
 
 
 ### Introduction
@@ -9,9 +9,9 @@ A software container allows a user to pack a software application _and all of it
 ### Reference material
 For a more in-depth guide, please refer to this great NIH tutorial: https://github.com/NIH-HPC/Singularity-Tutorial
 
-### Installation
+### Installation 
 For this tutorial we will use Singularity v3.4.2.
-To install Singularity in Ubuntu or CentOS, follow these instructions:
+To install Singularity on your personal laptop in Ubuntu or CentOS, follow these instructions:
 
 On Ubuntu, run these commands to make sure you have all the necessary packages installed.
 ```
@@ -45,3 +45,21 @@ $ make
 
 $ sudo make install
 ```
+If you want support for tab completion of Singularity commands, you need to source the appropriate file and add it to the bash completion directory in /etc so that it will be sourced automatically when you start another shell.
+```
+$ . etc/bash_completion.d/singularity
+
+$ sudo cp etc/bash_completion.d/singularity /etc/bash_completion.d/
+```
+If everything went according to plan, you now have a working installation of Singularity. Simply typing singularity will give you a summary of all the commands you can use. Typing singularity help <command> will give you more detailed information about running an individual command.
+
+### Build a recipe from DockerHub 
+With Singularity you can write your own recipe but in this basic tutorial we use a function that 'pull' from [DockerHub](https://hub.docker.com/) a recipe of our program ([STRique](https://hub.docker.com/r/giesselmann/strique)on DockerHub and is [GitRepository](https://github.com/giesselmann/STRique)) that we would obtain.
+```
+$ singularity pull docker://giesselmann/strique:latest
+```
+For testing that everything is OK we can type this other command that run a test script for STRique:
+```
+$ singularity exec strique-latest.simg python3 /app/scripts/STRique_test.py 
+```
+
