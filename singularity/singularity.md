@@ -10,4 +10,9 @@ A software container allows a user to pack a software application _and all of it
 For a more in-depth guide, please refer to this great NIH tutorial: https://github.com/NIH-HPC/Singularity-Tutorial
 
 ### Installation
-For this tutorial we will use Singularity v3.4.2 ([download](https://github.com/sylabs/singularity/releases/download/v3.4.2/singularity-3.4.2.tar.gz))
+For this tutorial we will use Singularity v3.4.2 
+```
+sudo apt-get update
+
+sudo apt-get -y install python build-essential debootstrap squashfs-tools libarchive-dev
+```
