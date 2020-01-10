@@ -1,7 +1,7 @@
-# Basic Singularity tutorial
+# Tutorial on installing Strique with Singularity 
 
 
-### Introduction
+### Introduction on Singularity basics
 [Singularity](https://www.sylabs.io/docs/) is a container solution similar to [Docker](https://www.docker.com/). It was created by the need for reproducible and portable scientific workflows.
 
 A software container allows a user to pack a software application _and all of its dependencies_ into a single package, which can be copied, moved, and shared without further overhead. Containers are also _portable_: they can be simply copied like you would do with regular files. A container is also _agnostic_ about the operating system where it is run, because everything is self-contained.
@@ -53,7 +53,7 @@ $ sudo cp etc/bash_completion.d/singularity /etc/bash_completion.d/
 ```
 If everything went according to plan, you now have a working installation of Singularity. Simply typing singularity will give you a summary of all the commands you can use. Typing singularity help <command> will give you more detailed information about running an individual command.
 
-### Build a recipe from DockerHub 
+### Build a recipe  for Strique from DockerHub 
 With Singularity you can write your own recipe but in this basic tutorial we use a function that 'pull' from [DockerHub](https://hub.docker.com/) a recipe of our program STRique ([DockerHub](https://hub.docker.com/r/giesselmann/strique), [GitRepository](https://github.com/giesselmann/STRique)) that we would obtain.
 ```
 $ singularity pull docker://giesselmann/strique:latest
