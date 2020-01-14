@@ -10,7 +10,7 @@ A software container allows a user to pack a software application _and all of it
 For a more in-depth guide, please refer to this great NIH tutorial: https://github.com/NIH-HPC/Singularity-Tutorial
 
 ### Installation 
-For this tutorial we will use Singularity v3.4.2.
+For this tutorial we will use Singularity v2.5.2.
 To install Singularity on your personal laptop in Ubuntu or CentOS, follow these instructions:
 
 On Ubuntu, run these commands to make sure you have all the necessary packages installed.
@@ -31,13 +31,13 @@ $ sudo yum install debootstrap.noarch squashfs-tools libarchive-devel
 ```
 Next we'll download a compressed archive of the source code:
 ```
-$ wget https://github.com/sylabs/singularity/releases/download/v3.4.2/singularity-3.4.2.tar.gz
+$ wget https://github.com/sylabs/singularity/releases/download/v2.5.2/singularity-2.5.2.tar.gz
 
-$ tar -xf singularity-3.4.2.tar.gz
+$ tar -xf singularity-2.5.2.tar.gz
 ```
 After that we are ready to install:
 ```
-$ cd singularity-3.4.2
+$ cd singularity-2.5.2
 
 $ ./configure --prefix=/usr/local
 
