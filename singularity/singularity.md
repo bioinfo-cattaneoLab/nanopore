@@ -31,7 +31,7 @@ $ sudo yum install debootstrap.noarch squashfs-tools libarchive-devel
 ```
 Next we'll download a compressed archive of the source code:
 ```
-$ wget https://github.com/sylabs/singularity/releases/download/v2.5.2/singularity-2.5.2.tar.gz
+$ wget https://github.com/sylabs/singularity/releases/download/2.5.2/singularity-2.5.2.tar.gz
 
 $ tar -xf singularity-2.5.2.tar.gz
 ```
