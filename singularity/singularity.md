@@ -58,7 +58,7 @@ With Singularity you can write your own recipe but in this basic tutorial we use
 ```
 $ singularity pull docker://giesselmann/strique:latest
 ```
-For testing that everything is OK we can type this other command that run a test script for STRique:
+For testing that everything is Ok we can type this other command that run a test script for STRique:
 ```
 $ singularity exec strique-latest.simg python3 /app/scripts/STRique_test.py 
 ```
