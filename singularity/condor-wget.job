@@ -1,0 +1,11 @@
+variable1=$(variable1) 
+variable2=$(variable2) 
+universe = vanilla
+executable = /bin/wget 
+arguments = "$(variable1) -O $(variable2)" 
+output = /lustre/home/gianluca/wget.out 
+error = /lustre/home/gianluca/junks/wget.err  
+log = /lustre/home/gianluca/junks/wget.log 
+request_cpus = 1 
+rank = Memory 
+queue 
