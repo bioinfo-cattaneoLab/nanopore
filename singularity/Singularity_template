@@ -1,0 +1,11 @@
+universe = vanilla
+executable = /bin/singularity
+arguments = exec -B /folder/to/load /path/to/img/ <comand> 
+output = <name_out>.out
+error = <name_err>.err
+log = <name_log>.log
+request_cpus = 1
+rank = Memory
+getenv = True
+transfer_executable = False
+queue
