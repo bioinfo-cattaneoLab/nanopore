@@ -6,7 +6,7 @@ condor_submit -name ettore -a "barcode=barcode01" /path/to/my/job
 ```
 # 2 Count repeats:
 
-### 2.1 For counting the repeats is important write a config-file using parameters that you find in yours Sam file. If you have already a SAM-file you can skip the following command line otherwise you have to convert a BAM-file in SAM.
+### 2.1 For counting the repeats is important write a config-file using parameters that you find in yours Sam file. If you have already a SAM-file you can skip the following command line otherwise you have to convert a BAM-file in SAM with this [job](STRique_jobs/condor-bam2sam.job).
 
 ```
 condor_submit -name ettore -a "n=1" /path/to/my/job
