@@ -1,0 +1,12 @@
+n=$(n)
+universe = vanilla
+executable = /bin/bash
+arguments = /lustrehome/gianluca/bash-strique.sh $(n) 
+#output = /lustre/home/enza/variantcallingFB/$(id)/$(id).$(chr).fb.normalized.vcf
+error = /lustrehome/gianluca/junk/$(n).sam.count.err 
+log = /lustrehome/gianluca/junk/$(n).sam.count.log 
+request_cpus = 4
+request_memory = 1000
+getenv = True
+transfer_executable = False
+queue

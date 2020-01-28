@@ -1,0 +1,12 @@
+n=$(n)
+universe = vanilla
+executable = /bin/bash
+arguments = /lustrehome/gianluca/bash-bam2sam.sh $(n) 
+#output = /lustre/home/enza/variantcallingAllSites/HGDP00511/HGDP00511.chr22.fb.vcf 
+error = /lustrehome/gianluca/junk/$(n).bam2sam.err 
+log = /lustrehome/gianluca/junk/$(n).bam2sam.log 
+request_cpus = 1
+request_memory = 2000
+getenv = True
+transfer_executable = False
+queue

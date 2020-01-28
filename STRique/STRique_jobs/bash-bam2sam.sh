@@ -1,0 +1,2 @@
+/bin/singularity exec -B /lustre/home/enza /lustre/home/enza/biocontainers/samtools-1.9.img samtools view  -h /lustre/home/enza/cattaneo/data/erc_pilot_fast5/SAM/PASS/21_109_1_1_20190201_0947_MN29119_FAK49673_a9e8b3a2_fastq_fastq_runid_361d77ef4849a8b084ddc941d7c81aec28e5c109_$1.fastq.bam > /lustre/home/enza/cattaneo/data/erc_pilot_fast5/SAM/PASS_SAM/21_109_1_1_20190201_0947_MN29119_FAK49673_a9e8b3a2_fastq_fastq_runid_361d77ef4849a8b084ddc941d7c81aec28e5c109_$1.fastq.sam
+ 
