@@ -1,6 +1,7 @@
+ratio=$(ratio)
 universe = vanilla
 executable = /bin/bash
-arguments = /lustrehome/gianluca/bash-strique_index.sh  
+arguments = /lustrehome/gianluca/bash-strique_index.sh $(ratio)
 #output = 
 error = /lustrehome/gianluca/junk/cattaneo/ratio-1_1_index.err
 log = /lustrehome/gianluca/junk/cattaneo/ratio-1_1_index_out
