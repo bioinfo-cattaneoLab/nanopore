@@ -1,0 +1,11 @@
+universe = vanilla
+executable = /bin/bash
+arguments = /lustrehome/gianluca/bash-strique_index.sh  
+#output = 
+error = /lustrehome/gianluca/junk/cattaneo/ratio-1_10e4_index.err
+log = /lustrehome/gianluca/junk/cattaneo/ratio-1_10e4_index_out
+request_cpus = 1
+request_memory = 6000
+getenv = True
+transfer_executable = False
+queue

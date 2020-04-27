@@ -1,10 +1,11 @@
 n=$(n)
+config=$(config)
 universe = vanilla
 executable = /bin/bash
-arguments = /lustrehome/gianluca/bash-strique.sh $(n) 
+arguments = /lustrehome/gianluca/bash-striqueCount_ratio_1_10e2.sh $(n) $(config)
 #output = 
-error = /lustrehome/gianluca/junk/$(n).sam.count.err 
-log = /lustrehome/gianluca/junk/$(n).sam.count.log 
+error = /lustrehome/gianluca/junk/cattaneo/$(n).$(config).count.err 
+log = /lustrehome/gianluca/junk/cattaneo/$(n).$(config).count.log 
 request_cpus = 4
 request_memory = 1000
 getenv = True
