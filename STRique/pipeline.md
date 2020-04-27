@@ -1,6 +1,6 @@
 # 1 Index fast5 file:
 
-### Indexing is essential right functioning of STRique software [job](STRique_jobs/condor-striqueIndex_touch.job). Command line:
+### Indexing is essential right functioning of STRique software [job](STRique_jobs/condor-striqueIndex.job). Command line:
 
 ```
 condor_submit -name ettore -a "folder=109-21CAG-1_1ratio" /path/to/my/job
