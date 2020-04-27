@@ -1,10 +1,10 @@
-ratio=$(ratio)
+folder=$(folder)
 universe = vanilla
 executable = /bin/bash
-arguments = /lustrehome/gianluca/bash-strique_index.sh $(ratio)
+arguments = /lustrehome/gianluca/bash-strique_index.sh $(folder)
 #output = 
-error = /lustrehome/gianluca/junk/cattaneo/ratio-1_1_index.err
-log = /lustrehome/gianluca/junk/cattaneo/ratio-1_1_index_out
+error = /lustrehome/gianluca/junk/cattaneo/$(folder)_index.err
+log = /lustrehome/gianluca/junk/cattaneo/$(folder)_index_out
 request_cpus = 1
 request_memory = 5000
 getenv = True
