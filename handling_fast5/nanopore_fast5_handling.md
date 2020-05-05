@@ -13,6 +13,12 @@ https://github.com/nanoporetech/scrappie
 scrappy /lustrehome/gianluca/testing/scrappy/data/single_fast5/0/346921ca-82a2-470c-bbf2-90b4bd358aa6.fast5 rgrgr_r94 > ~/testing/scrappy/346921ca-82a2-470c-bbf2-90b4bd358aa6.fa
 ```
 
+### Convert fasta into fastq (perl script)
+
+```
+perl ~/src/fasta_to_fastq.pl ~/testing/scrappy/346921ca-82a2-470c-bbf2-90b4bd358aa6.fa > ~/testing/scrappy/346921ca-82a2-470c-bbf2-90b4bd358aa6.fq
+```
+
 ### Read-to-read overlap finding (conda)
 
 https://github.com/lh3/minimap2
