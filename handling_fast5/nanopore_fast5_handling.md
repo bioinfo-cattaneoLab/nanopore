@@ -5,7 +5,7 @@ https://github.com/nanoporetech/ont_fast5_api
 ```
 multi_to_single_fast5 -i ~/testing/scrappy/data/fast5/109-21CAG-1_1ratio/ -s /lustrehome/gianluca/testing/scrappy/data/single_fast5
 ```
-### Basecalling, from fast5 to bam/sam/fastq (SCRAPPY python version)  
+### Basecalling, from fast5 to fasta (SCRAPPY python version)  
  
 https://github.com/nanoporetech/scrappie
 
