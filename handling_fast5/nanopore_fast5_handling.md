@@ -15,6 +15,8 @@ scrappy /lustrehome/gianluca/testing/scrappy/data/single_fast5/0/346921ca-82a2-4
 
 ### Convert fasta into fastq (perl script)
 
+https://code.google.com/archive/p/fasta-to-fastq/
+
 ```
 perl ~/src/fasta_to_fastq.pl ~/testing/scrappy/346921ca-82a2-470c-bbf2-90b4bd358aa6.fa > ~/testing/scrappy/346921ca-82a2-470c-bbf2-90b4bd358aa6.fq
 ```
