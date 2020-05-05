@@ -30,8 +30,11 @@ https://github.com/lh3/minimap2
 ```
 minimap2 -d ~/testing/minimap2/htt_exon1.mmi ~/testing/reference/htt_exon1_pcr_amplicon.fa
 ```
+2) Alignment 
 
-
+```
+minimap2 -y -a -x map-ont -t 2 --MD ~/testing/minimap2/htt_exon1.mmi ~/testing/scrappy/prova_multi.fq > ~/testing/minimap2/prova2_multi_alignment.sam
+```
 
 ### Assembly (conda)
 
