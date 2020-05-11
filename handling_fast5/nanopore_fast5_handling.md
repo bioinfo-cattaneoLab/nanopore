@@ -1,16 +1,17 @@
 ### From multi to single fast5 files
 
-https://github.com/nanoporetech/ont_fast5_api
+* https://github.com/nanoporetech/ont_fast5_api
+* https://anaconda.org/bioconda/ont-fast5-api <-
 
 ```
-multi_to_single_fast5 -i /lustrehome/gianluca/testing/scrappy/data/fast5/109-21CAG-1_1ratio/ -s /lustrehome/gianluca/testing/scrappy/data/single_fast5
+/lustrehome/gianluca/src/anaconda3/bin/multi_to_single_fast5 -i /lustrehome/gianluca/testing/scrappy/data/fast5/109-21CAG-1_1ratio/ -s /lustrehome/gianluca/testing/scrappy/data/single_fast5
 ```
 ### Basecalling, from fast5 to fasta (SCRAPPY python version)  
 
 https://github.com/nanoporetech/scrappie
 
 ```
-scrappy /lustrehome/gianluca/testing/scrappy/data/single_fast5/0/346921ca-82a2-470c-bbf2-90b4bd358aa6.fast5 rgrgr_r94 > /lustrehome/gianluca/testing/scrappy/346921ca-82a2-470c-bbf2-90b4bd358aa6.fa
+/lustrehome/gianluca/src/anaconda3/bin/./scrappy /lustrehome/gianluca/testing/scrappy/data/single_fast5/0/346921ca-82a2-470c-bbf2-90b4bd358aa6.fast5 rgrgr_r94 > /lustrehome/gianluca/testing/scrappy/346921ca-82a2-470c-bbf2-90b4bd358aa6.fa
 ```
 
 ### Convert fasta into fastq (perl script) - not necessary
@@ -39,7 +40,7 @@ https://github.com/lh3/minimap2
 ### Assembly (preCompiled by GitHub)
 
 * https://github.com/marbl/canu
-* https://github.com/marbl/canu/releases/download/v2.0/canu-2.0.Linux-amd64.tar.xz
+* https://github.com/marbl/canu/releases/download/v2.0/canu-2.0.Linux-amd64.tar.xz <-
 
 ```
 /lustrehome/gianluca/src/canu-2.0/Linux-amd64/bin/canu -p htt -d /lustrehome/gianluca/testing/canu/htt_0_2.3k genomeSize=2.3k useGrid=false -nanopore /lustrehome/gianluca/testing/scrappy/fasta/multi_0.fa
