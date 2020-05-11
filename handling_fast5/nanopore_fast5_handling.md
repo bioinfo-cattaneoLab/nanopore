@@ -25,7 +25,7 @@ perl ~/src/fasta_to_fastq.pl ~/testing/scrappy/346921ca-82a2-470c-bbf2-90b4bd358
 
 https://github.com/lh3/minimap2
 
-1) indexing reference fasta
+1) Indexing reference fasta
 
 ```
 minimap2 -d ~/testing/minimap2/htt_exon1.mmi ~/testing/reference/htt_exon1_pcr_amplicon.fa
