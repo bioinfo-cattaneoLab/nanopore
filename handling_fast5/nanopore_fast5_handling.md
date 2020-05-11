@@ -67,12 +67,12 @@ Transform SAM into BAM
 
 https://github.com/jts/nanopolish
 
-1) bisogna sapere il range per l'argomento "-w" del passaggio successibo
+1) Obtain the range
 ```
 python ~/src/nanopolish/scripts/nanopolish_makerange.py ~/testing/canu/htt_0_2.3k/htt.contigs.fasta > range.txt
 ```
 
-2) bisogna fare index del file multi_0.fa
+2) Indexing of raw data
 ```
 ~/src/nanopolish/./nanopolish index -d ~/testing/scrappy/data/fast5/109-21CAG-1_1ratio/ ~/testing/scrappy/fasta/multi_0.fa
 ```
