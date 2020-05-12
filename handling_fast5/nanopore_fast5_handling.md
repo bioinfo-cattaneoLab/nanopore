@@ -39,7 +39,7 @@ perl /lustrehome/gianluca/src/fasta_to_fastq.pl /lustrehome/gianluca/testing/scr
 2) Alignment
 
 ```
-/lustrehome/gianluca/src/anaconda3/bin/./minimap2 -y -a -x map-ont -t 2 --MD /lustrehome/gianluca/testing/minimap2/htt_exon1.mmi /lustrehome/gianluca/testing/scrappy/prova_multi.fq > /lustrehome/gianluca/testing/minimap2/prova2_multi_alignment.sam
+/lustrehome/gianluca/src/anaconda3/bin/./minimap2 -y -a -x map-ont -t 2 --MD /lustrehome/gianluca/testing/minimap2/htt_exon1.mmi /lustrehome/gianluca/testing/scrappy/prova_multi.fq > /lustrehome/gianluca/testing/minimap2/sam/multi_alignment_0.sam
 ```
 
 ### Assembly
@@ -58,15 +58,15 @@ https://anaconda.org/bioconda/bwa
 ```
 /lustrehome/gianluca/src/anaconda3/bin/./bwa index /lustrehome/gianluca/testing/canu/htt_0_2.3k/htt.contigs.fasta
 
-/lustrehome/gianluca/src/anaconda3/bin/./bwa mem -x ont2d -t 2 /lustrehome/gianluca/testing/canu/htt_0_2.3k/htt.contigs.fasta /lustrehome/gianluca/testing/scrappy/fasta/multi_0.fa > /lustrehome/gianluca/testing/bwa/multi_0.sam
+/lustrehome/gianluca/src/anaconda3/bin/./bwa mem -x ont2d -t 2 /lustrehome/gianluca/testing/canu/htt_0_2.3k/htt.contigs.fasta /lustrehome/gianluca/testing/scrappy/fasta/multi_0.fa > /lustrehome/gianluca/testing/bwa/sam/multi_0.sam
 ```
 Transform SAM into BAM
 ```
-/lustrehome/enza/bin/samtools-1.9/samtools view -b -S /lustrehome/gianluca/testing/bwa/multi_0.sam > /lustrehome/gianluca/testing/bwa/multi_0.bam
+/lustrehome/enza/bin/samtools-1.9/samtools view -b -S /lustrehome/gianluca/testing/bwa/sam/multi_0.sam > /lustrehome/gianluca/testing/bwa/bam/multi_0.bam
 
-/lustrehome/enza/bin/samtools-1.9/samtools sort /lustrehome/gianluca/testing/bwa/multi_0.bam > /lustrehome/gianluca/testing/bwa/multi_0_sorted.bam
+/lustrehome/enza/bin/samtools-1.9/samtools sort /lustrehome/gianluca/testing/bwa/bam/multi_0.bam > /lustrehome/gianluca/testing/bwa/bam/multi_0_sorted.bam
 
-/lustrehome/enza/bin/samtools-1.9/samtools index /lustrehome/gianluca/testing/bwa/multi_0_sorted.bam
+/lustrehome/enza/bin/samtools-1.9/samtools index /lustrehome/gianluca/testing/bwa/bam/multi_0_sorted.bam
 ```
 
 ### Polishing
@@ -84,5 +84,5 @@ python /lustrehome/gianluca/src/nanopolish/scripts/nanopolish_makerange.py /lust
 ```
 3) Polishing
 ```
-/lustrehome/gianluca/src/nanopolish/./nanopolish variants -consensus -w tig00000002:0-2399 -p 2 -t 2 -r /lustrehome/gianluca/testing/scrappy/fasta/multi_0.fa -b /lustrehome/gianluca/testing/bwa/multi_0_sorted.bam -g /lustrehome/gianluca/testing/canu/htt_0_2.3k/htt.contigs.fast
+/lustrehome/gianluca/src/nanopolish/./nanopolish variants -consensus -w tig00000002:0-2399 -p 2 -t 2 -r /lustrehome/gianluca/testing/scrappy/fasta/multi_0.fa -b /lustrehome/gianluca/testing/bwa/bam/multi_0_sorted.bam -g /lustrehome/gianluca/testing/canu/htt_0_2.3k/htt.contigs.fast
 ```
