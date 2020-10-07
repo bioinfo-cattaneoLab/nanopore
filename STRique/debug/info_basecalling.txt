@@ -1,0 +1,4 @@
+QSCORE	basecall_pass_reads	fast5_reads
+7	6470	8574
+10	4789	8574
+13	338	8574
