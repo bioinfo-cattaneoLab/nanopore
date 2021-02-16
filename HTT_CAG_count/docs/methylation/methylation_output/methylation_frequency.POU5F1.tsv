@@ -1,0 +1,4 @@
+chromosome	start	end	num_motifs_in_group	called_sites	called_sites_methylated	methylated_frequency	group_sequence
+chr6	31164799	31164799	1	1	1	1.000	CCTCTCGTTGT
+chr6	31164812	31164812	1	1	1	1.000	ATAGTCGCTGC
+chr6	31164823	31164823	1	1	1	1.000	TTGATCGCTTG

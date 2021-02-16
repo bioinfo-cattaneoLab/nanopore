@@ -1,0 +1,1 @@
+I file qui riportati sono estrapolati dalle reads con alto numero di CAG, sembra essere che le reads siano composte da 2 plasmidi uniti (concatameri) e questa cosa sembra essere anticipata da una duplicazione degli ID. Filtrando per gli ID presenti una sola volta dovrei eliminare questo problema.
